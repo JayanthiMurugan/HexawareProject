@@ -1,0 +1,108 @@
+<div class="rightcolumn" ng-hide="listPage" id="page-content-wrapper">
+	<div class="breadcrumb">
+						<div class="breadcrumbtext">
+							Customer-Add
+						</div>
+						<br>
+	</div>				
+	<table class="table table-striped table-condensed table-bordered table-hover">
+	
+		<tr>
+			<td>
+				Customerid
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="customerid" [readonly]="showButton" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Name
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="name" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Email
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="email" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Phone
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="phone" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Address
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="address" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Orders
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="orders" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Action
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="action" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Createddate
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="createddate" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Createdby
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="createdby" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Modifieddate
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="modifieddate" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Modifiedby
+			</td>
+			<td>
+				<input type="text" [(ngModel)]="modifiedby" />
+			</td>
+		</tr>
+		
+		
+	</table>
+	
+	<input type="button" class="btn btn-default" value="List" routerLink="/list" style="float:right">
+	<input type="button" class="btn btn-default" value="Add" (click)="add();" style="float:right" 
+	[hidden]="showButton">
+	<input type="button" class="btn btn-default" value="Update" (click)="update();" 
+	style="float:right" [hidden]="!showButton">
+	
+</div>
