@@ -1,0 +1,18 @@
+cd <Path>
+
+node -v
+
+npm -v
+
+ng --version
+
+npm install
+
+npm install ngx-pagination --save
+
+ng build --env=prod --aot
+
+exit
+
+SET PATH=C:\Program Files\Nodejs;%PATH%
+SET PATH=C:\Program Files\Nodejs;C:\Users\31984\AppData\Roaming\npm;%PATH%
